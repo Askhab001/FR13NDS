@@ -1,3 +1,13 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def index(request):
+    return render(request, 'main.html')
+
+
+def my_view(request):
+    users = ["Admin", "User", "Guest"]
+    return render(request, 'main.html', {'users': users})
+
+
+

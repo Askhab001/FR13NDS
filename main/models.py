@@ -1,3 +1,11 @@
 from django.db import models
 
-# Create your models here.
+
+class New(models.Model):
+    text = ('filename')
+
+
+models.TextField()
+
+
+
